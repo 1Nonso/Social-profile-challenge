@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  background: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+}
+
+#main-div {
+  width: 21rem;
+}
+
+#main-div1 {
+  margin-top: 0.5rem;
+}
+
+#article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align: center;
+    width: 18.5rem;
+    margin-bottom: 2.5rem;
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5rem;
+  }
+}
+
+h1 {
+  width: 15rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: hsl(300, 43%, 22%);
+}
+
+#ratings-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratings-box {
+  width: 95%;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.6rem;
+  background-color: hsl(300, 24%, 96%);
+  margin-bottom: 1rem;
+  p {
+    color: hsl(300, 43%, 22%);
+  }
+}
+
+#main-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.comment-box {
+  width: 85%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 0.6rem;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  p {
+    line-height: 1.5rem;
+    color: hsl(0, 0%, 100%, 0.8);
+  }
+  .profile-status {
+    color: hsl(333, 80%, 67%);
+  }
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+  img {
+    width: 3rem;
+    border: none;
+    border-radius: 3rem;
+  }
+  p {
+    line-height: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    align-items: center;
+    background: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -10% 20%, 100% 70%;
+    background-size: 50% 70%, 70% 100%;
+    height: 100dvh;
+    padding: 0;
+  }
+
+  #main-div {
+    width: 60rem;
+  }
+
+  #main-div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #article {
+    width: 38rem;
+    align-items: flex-start;
+    p {
+      width: 100%;
+      text-align: left;
+    }
+    h1 {
+      text-align: left;
+      justify-content: right;
+    }
+  }
+
+  #ratings-section {
+    align-items: flex-end;
+  }
+
+  .ratings-box {
+    width: 27rem;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #r-box1 {
+    position: relative;
+    right: 4rem;
+  }
+
+  #r-box2 {
+    position: relative;
+  }
+
+  #r-box3 {
+    position: relative;
+    right: -3rem;
+  }
+
+  #main-section {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .comment-box {
+    width: 17rem;
+  }
+
+  #c-box2 {
+    position: relative;
+    top: 1.5rem;
+  }
+
+  #c-box3 {
+    position: relative;
+    top: 3rem;
+  }
+}
